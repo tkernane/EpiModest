@@ -1,11 +1,14 @@
 #' Estimation of the parameters of SIR Epidemic Model
 #' @export
-#' @param I numeric vector variable
-#' @param S numeric vector variable
-#' @param m numeric variable
-#' @param beta0 numeric variable
-#' @param mu0 numeric variable
-SIRMCMC=function(I,S,m,cv,beta0,mu0){
+#' @param I numeric vector variable for the number of infected individuals
+#' @param S numeric vector variable for the number of scuceptible individuals
+#' @param m numeric variable for the number of imputed data between each pair of observations
+#' @param beta0 numeric variable representing the starting infection rate for the MCMC algorithm
+#' @param mu0 numeric variable representing the starting recovery rate for the MCMC algorithm
+#' @param cv numeric variable representing the number of iterations for the MCMC algorithm
+#' @param cv numeric variable representing the number of iterations for the MCMC algorithm
+#' @param bur numeric variable representing the burning period from which we begin the computation of the mean posterior values
+SIRMCMC=function(I,S,m,cv,bur,beta0,mu0){
     library(GIGrvg)
     library(mvtnorm)
     ####################################
