@@ -4,7 +4,7 @@ Title: Epidemic Models Estimation and Simulation
 Version: 0.1.0
 Author: Tewfik Kernane
 Maintainer: Tewfik Kernane <tkernane@gmail.com>
-Depends: GIGrvg; mvtnorm
+Imports: GIGrvg, mvtnorm
 Description: Estimation of the parameters of Epidemic Models of SIR and SEIR types    Simulation of the trajectories of SIR and SEIR epidemic models 
     Use four spaces when indenting paragraphs within the Description.
 License: GPL-3
