@@ -3,8 +3,9 @@ Type: Package
 Title: Epidemic Models Estimation and Simulation
 Version: 0.1.0
 Author: Tewfik Kernane
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
+Maintainer: Tewfik Kernane <tkernane@gmail.com>
+Depends: GIGrvg; mvtnorm
+Description: Estimation of the parameters of Epidemic Models of SIR and SEIR types    Simulation of the trajectories of SIR and SEIR epidemic models 
     Use four spaces when indenting paragraphs within the Description.
 License: GPL-3
 Encoding: UTF-8
