@@ -208,5 +208,5 @@ SIRMCMC=function(I,S,m,cv,bur,beta0,mu0){
     l[[3]]=yn2
 
     return(l)
-
+beta<-mean(a[[1]][bur:cv,1])
 }
