@@ -211,3 +211,21 @@ SIRMCMC=function(I,S,m,cv,bur,beta0,mu0){
     cv=cv
     bur=bur
 }
+###############################################################
+#     a=SIRMCMC(I,S,m,cv,beta0,mu0) # name the function by 'a' for example
+######################################     
+#######	Example: Eyam Plague #########
+      
+
+# S<-c(254,235,201,153.5,121,110,97) # susceptibles
+# I<-c(7,14.5,22,29,20,8,8)          # infectives
+# a=SIRMCMC(I,S,15,20000,0.5,0.5)    # m=15, initial values of parameters beta0=0.5, mu0=0.5
+# mean(a[[1]][5000:20000,1]) # posterior mean of Beta, from interation 5000 to 20000
+# sd(a[[1]][5000:20000,1])   # standard deviation of Beta
+# mean(a[[1]][5000:20000,2]) # posterior mean of mu
+# sd(a[[1]][5000:20000,2])   # standard deviation of mu
+# b1=apply(a[[2]][5000:20000,],2,mean)### mean sample path of susceptibles
+# b2=apply(a[[3]][5000:20000,],2,mean)### mean sample path of removed 
+# plot(b1,type="l")
+# par(new=TRUE)
+# plot(b2,type="l")
